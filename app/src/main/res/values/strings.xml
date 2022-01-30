@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Fitpeo Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Blank Screen</string>
+    <string name="engineering_product">Quarter 3 Product &amp; Engineering Kickoff....</string>
+    <string name="meeting">Meeting in 11 min at 11:00 am</string>
+    <string name="office">6 attendes in office</string>
+    <string name="event">3 more events later</string>
+    <string name="plan">Plan ahead</string>
+    <string name="desk">Get a desk for next week</string>
+    <string name="Nora">Nora Kim</string>
+    <string name="robin">Robin</string>
+    <string name="nora_address">Floor 1,Boston</string>
+    <string name="team_mates">6 teammates will be in</string>
+    <string name="Pass">Pass details</string>
+    <string name="Note">Notes</string>
+    <string name="Notes_content">You are the first person back in office! \nMind the signs put up and complete your \n
+    checkpoint daily.</string>
+    <string name="sample_string">"some test line 1 \n some test line 2"</string>
+    <string name="location">Location</string>
+    <string name="work_area">Work area</string>
+    <string name="desk_pass_details">Desk</string>
+    <string name="schedule">Schedule</string>
+    <string name="office_info">Offices</string>
+    <string name="default_location">Boston HQ</string>
+    <string name="work_type">Sales &amp; Marketing</string>
+    <string name="map_intent">View on map</string>
+    
+</resources>

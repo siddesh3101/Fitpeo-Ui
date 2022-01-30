@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstScreen">
+
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.example.fitpeoproject.FirstScreen"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/navigatetoSecondFragment"
+            app:destination="@id/secondScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreen"
+        android:name="com.example.fitpeoproject.SecondScreen"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" >
+        <action
+            android:id="@+id/navigatetoFirstScreen"
+            app:destination="@id/firstScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/office_Fragment"
+        android:name="com.example.fitpeoproject.Office_Fragment"
+        android:label="fragment_office_"
+        tools:layout="@layout/fragment_office_" />
+    <fragment
+        android:id="@+id/people_Fragment"
+        android:name="com.example.fitpeoproject.People_Fragment"
+        android:label="fragment_people_"
+        tools:layout="@layout/fragment_people_" />
+</navigation>
