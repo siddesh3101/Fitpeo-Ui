@@ -7,6 +7,7 @@ import android.content.DialogInterface.OnMultiChoiceClickListener
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PERMISSION_GRANTED
+import android.graphics.Color
 import android.location.Geocoder
 import android.net.Uri
 import android.os.Bundle
@@ -98,12 +99,15 @@ class SecondScreen : Fragment() {
                             sb.append(", ")
                         }
                     }
-
+                    binding.dropDown.setTextColor(Color.parseColor("#4B4A4A"))
                     binding.dropDown.setText(sb.toString())
+
+                    alertDialog.dismiss()
+
                 })
             builder.setNegativeButton("Cancel",
                 DialogInterface.OnClickListener { dialog, id ->
-                    dialog.dismiss()
+                    alertDialog.dismiss()
                 })
 
             builder.setNeutralButton("Clear",
@@ -114,6 +118,7 @@ class SecondScreen : Fragment() {
                         daylist.clear()
                         binding.dropDown.setText("")
                     }
+                    alertDialog.dismiss()
                 })
 
             builder.show()
