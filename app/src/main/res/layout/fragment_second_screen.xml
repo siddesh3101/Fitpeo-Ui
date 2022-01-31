@@ -129,7 +129,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="366dp"
-        android:layout_height="200dp"
+        android:layout_height="173dp"
         android:layout_marginTop="428dp"
         android:background="#FFFFFF"
         android:visibility="visible"
@@ -250,12 +250,13 @@
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="8dp"
             android:background="@android:drawable/editbox_background"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
-            android:hint="Select Day"
+            android:hint="Mon,Wed,Fri"
             android:textColor="#FFFFFF"
-            android:textColorHint="#000000" />
+            android:textColorHint="#000000"
+            android:textSize="14sp" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -271,6 +272,53 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="632dp"
+        android:text="Permissions"
+        android:textColor="#4B4A4A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="366dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="664dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Desk Booking"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="During Office Hours"
+            android:textColor="#4B4A4A" />
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

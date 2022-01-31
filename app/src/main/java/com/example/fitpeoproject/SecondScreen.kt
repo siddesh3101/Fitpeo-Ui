@@ -64,13 +64,13 @@ class SecondScreen : Fragment() {
 
         val daylist = arrayListOf<Int>()
         val dayArray = arrayOf(
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thur",
+            "Fri",
+            "Sat",
+            "Sun"
         )
         val selectedDay = BooleanArray(dayArray.size)
         binding.dropDown.setOnClickListener {
